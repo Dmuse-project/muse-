@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting Comment</title>
+    <link rel="stylesheet" href="comment-app.css">
+
+</head>
+<body>
+    <header>
+        <div class="containers">
+            <div class="header-left">
+                 <a href="comment-app.html"><img src="muse2.png" alt="logo"></a>
+            </div>
+            <div class="header-center">
+                
+              <li><a href="giveaway.html"> <img src="twitterD.png" alt="twitter" ></a></li>
+              
+            </div>
+            <div class="header-right">
+               <a href="blur.html"><img src="html.png" alt=""></a>
+            </div>
+        </div>   
+        </header>
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                <ul>
+                    <li><a href="comment-app.html" class="home">Home</a></li>
+                    <li><a href="giveaway.html" class="giveaway">Giveaway</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+    <section>
+    <div class="container">
+        <div class="comment-icon">
+                    <img src="me.jpeg" alt="">
+                </div>
+        
+        <div class="comment-container opened" id="first-comment">
+            <div class="comment-card">
+                <h3 class="comment-title">I_AM_D'MUSE</h3>
+                <p>
+                    Chapter 7 of 12 <br> Welcome to the Month of July... Happy new Month Y'all.
+                </p>
+                <div class="comment-card-footer">
+                    <div>
+                        <img  id="red" src="heart.jpg" alt="heart" onclick="increment_C()">
+
+                        <p id="commentA-el"></p> 
+                    </div>
+                    <div>
+                        <h4 ondblclick="decrement_C()">Dislikes</h4>
+                        <P id="commentB-el"></P> 
+                    </div>
+                    <div class="show-reply">
+                        <img src="message1.png" alt=""> 
+                        <P>2</P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment-container" dataset="first-comment" id="first-reply">
+                <div class="comment-card">
+                    <h3 class="comment-title">FRANK</h3>
+                    <p>
+                        Thanks!! <br> Wishing you the same.
+                    </p>
+                    <div class="comment-card-footer">
+                        <div>
+                            <img id="red1" src="heart.jpg" alt="heart" onclick="increment_D()">
+                            <P id="commentC-el"></p>
+                        </div>
+                        <div>
+                            <h4 ondblclick="decrement_D()">Dislikes</h4>
+                            <p id="commentD-el"></p>
+                        </div>
+                        <div class="show-reply">
+                            <img src="message1.png" alt="message"> 
+                            <P>1</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-container" dataset="first-reply">
+                    <div class="comment-card">
+                        <h3 class="comment-title">I_AM_D'MUSE.</h3>
+                        <p>
+                            Happy New Month!! <br> Frank
+                        </p>
+                        <div class="comment-card-footer">
+                            <div>
+                                <img id="red2" src="heart.jpg" alt="heart" onclick="increment_E()"> 
+                                <P id="commentE-el"></P>
+                            </div>
+                            <div>
+                                <h4 ondblclick="decrement_E()">Dislikes</h4>
+                                <p id="commentF-el"></p>
+                            </div>
+                            <div class="show-reply">
+                                <img src="message1.png" alt="message">
+                                <P></P>
+                                
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </div>
+        <div class="comment-container" dataset="first-comment" id="second-comment">
+            <div class="comment-card">
+                <h3 class="comment-title">AMINEX</h3>
+                <p>
+                    My Guyyy! <br> Happy New Month, Fam.
+                </p>
+                <div class="comment-card-footer">
+                    <div>
+                        <img  id="red3" src="heart.jpg" alt="" onclick="increment_F()"> 
+                        <p id="commentG-el">1</p>
+                    </div>
+                    <div>
+                        <h4 ondblclick="decrement_F()">Dislikes</h4>
+                        <p id="commentH-el"></p>
+                    </div>
+                    <div class="show-reply">
+                        <img src="message1.png" alt="">
+                        <P>1</P>
+                     </div>
+                </div>
+            </div>
+            <div class="comment-container" dataset="second-comment">
+                <div class="comment-card">
+                    <h3 class="comment-title">I_AM_D'MUSE.</h3>
+                    <p>
+                        Thanks fam!<br> Welcome to the Month of July.
+                    </p>
+                    <div class="comment-card-footer">
+                        <div>
+                            <img  id="red4" src="heart.jpg" alt="" onclick="increment_G()"> </div>
+                            <p id="commentI-el"></p>
+                        <div>
+                            <h4 ondblclick="decrement_G()">Dislikes</h4>
+                            <p id="commentJ-el"></p>
+                        </div>
+                        <div class="show-reply">
+                            <img src="message1.png" alt="message">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+       
+            
+
+    </div>
+  </div>
+  </div>
+  
+  <div class="container">
+    <div class="comment-icon">
+        <img src="me.jpeg" alt="" class="me2">
+    </div>
+    <div class="comment-container opened" id="second-reply" >
+        <div class="comment-card">
+            <h3 class="comment-title">I_AM_D'MUSE.</h3>
+            <p>
+               Wishing you all the month best <br>Please like and follow
+            </p>
+            <div class="comment-card-footer">
+                <div >
+                    <img  id="red10" src="heart.jpg" alt="" onclick="increment_A()" > 
+                    <P id="count-el"></P>
+                
+                </div>
+                    
+                <div> 
+                    <h4  ondblclick="decrement_A()">Dislikes</h4>
+                    <p id="decount-el"></p>
+                </div>
+                <div class="show-reply">
+                    <img src="message1.png" alt="">
+                    <P>1</P>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="comment-icon">
+            <img src="me.jpeg" alt="" class="me3">
+        </div> -->
+        <div class="comment-container opened" dataset="second-reply">
+            <div class="comment-card">
+                <h3 class="comment-title">I_AM_D'MUSE.</h3>
+                <p>
+                    Follow for more update on IG<br>  @The_front_End_Developer_D'muse.
+                </p>
+                <div class="comment-card-footer">
+                    <div>
+                        <img  id="red11" src="heart.jpg" alt="" onclick="increment_H()" > 
+                        <P id="commentK-el"></P>
+                    
+                    </div>
+                        
+                    <div>
+                        <h4  ondblclick="decrement_H()">Dislikes</h4>
+                        <p id="commentL-el"></p>
+                    </div>
+                    <div class="show-reply">
+                        <img src="message1.png" alt="">
+                        <P></P>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+  </div>
+
+  <div class="container">
+    <div class="comment-icon">
+        <img src="me.jpeg" alt="" class="me3">
+    </div>
+    <div class="comment-container opened" dataset="second-comment">
+        <div class="comment-card">
+            <h3 class="comment-title">I_AM_D'MUSE.</h3>
+            <p>
+                Follow for more update on IG<br>  @The_front_End_Developer_D'muse.
+            </p>
+            <div class="comment-card-footer">
+                <div>
+                    <img id="red20" src="heart.jpg" alt="" onclick="increment_B()" > 
+                    <P id="count_1-el"></P>
+                
+                </div>
+                    
+                <div>
+                    <h4  ondblclick="decrement_B()">Dislikes</h4>
+                    <p id="decount_1-el"></p>
+                </div>
+                <div class="show-reply">
+                    <img src="message1.png" alt="">
+                    <P></P>
+                </div>
+            </div>
+        </div>
+        </div>
+  </div>
+    <script src="comment2.js"></script>
+    </section>
+</body>
+</html>
